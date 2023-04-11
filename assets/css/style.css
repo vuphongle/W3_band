@@ -123,7 +123,7 @@ html {
 #slider{
     margin-top: 44px;
     padding-top: 50%;
-    background: url('/assets/img/Slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/Slider/slider1.jpg') top center / cover no-repeat;
     position: relative;
 }
 
