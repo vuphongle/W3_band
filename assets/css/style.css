@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,9 +29,28 @@ html {
     color: white !important;
 }
 
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pull-right {
+    float: right;
 }
 
 .col {
@@ -39,11 +59,30 @@ html {
     padding-right: 8px;
 }
 
+.col-full {
+    width: 100%;
+}
+
 .col-third {
     /* float: left; */
     width: 33.33333%;
     /* padding: 0 8px; */
 
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.col-half{
+    width: 50%;
 }
 
 .text-center {
@@ -170,12 +209,12 @@ html {
 }
 
 #content{
-    height: 1500px;
+
 }
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -257,7 +296,6 @@ html {
 
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img {
@@ -290,23 +328,64 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-    border: none;
-}
 
-.place-buy-btn:hover {
+
+.btn:hover {
     color: black;
     background-color: #cccccc;
 }
 
+/* contact form */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section img {
+    width: 100%;
+}
+
 #footer{
-    
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socical-list {
+    font-size: 24px;
+}
+
+#footer .socical-list a{
+    color: #666666;
+    text-decoration: none;
+}
+#footer .coppyright a:hover, 
+#footer .socical-list a:hover {
+    color: #a0a0a0;
+}
+
+#footer .coppyright {
+    margin-top: 15px;
+    color: #666666;
+}
+
+#footer .coppyright a{
+    color: #666666;
 }
 
 .modal {
